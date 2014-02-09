@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/reset.css">
+<title>Sucheté Client</title>
+</head>
+<body>
+<input type="text" id="messenger" placeholder="yaz babam yaz" />
+<!-- http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js -->
+<script type="text/javascript" src="lib/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+  function deferJS() {
+  var element = document.createElement("script")
+  element.src = "js/app.js"
+  element.charset = "utf-8"
+  document.body.appendChild(element)
+  }
+  if (window.addEventListener)
+  window.addEventListener("load", deferJS, false)
+  else if (window.attachEvent)
+  window.attachEvent("onload", deferJS)
+  else window.onload = deferJS
+</script>
+</body>
+</html>
