@@ -2,7 +2,7 @@ ws = new WebSocket("ws://localhost:8888/sucheté", "echo-protocol")
 ws.onopen = ->
   console.log "connection opened"
 ws.onmessage = (message) ->
-  console.log "message received:" + message.data
+  console.log "message received: #{message.data}"
 
 ID = Math.round(Math.random() * 65536)
 
